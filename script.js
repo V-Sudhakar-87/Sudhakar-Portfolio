@@ -78,23 +78,13 @@ cards.forEach(card => {
     });
 
 });
-const heroEmail = document.getElementById("emailLink");
-const contactEmail = document.getElementById("contactEmailLink");
+const emailLink = document.getElementById("emailLink");
 
 if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-
-    heroEmail.href = "mailto:suthakarv143@gmail.com";
-    contactEmail.href = "mailto:suthakarv143@gmail.com";
-
+    emailLink.href = "mailto:suthakarv143@gmail.com";
 } else {
-
-    heroEmail.href =
+    emailLink.href =
       "https://mail.google.com/mail/?view=cm&fs=1&to=suthakarv143@gmail.com";
-
-    contactEmail.href =
-      "https://mail.google.com/mail/?view=cm&fs=1&to=suthakarv143@gmail.com";
-
-    heroEmail.target = "_blank";
-    contactEmail.target = "_blank";
+    emailLink.target = "_blank";
 }
 
